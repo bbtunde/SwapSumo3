@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="swampsumo.com.fragments.SearchFragment"
+    android:padding="5dp"
+    >
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:entries="@array/category"
+        android:drawSelectorOnTop="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendor"
+        android:hint="Vendor name (Optional)"
+        android:layout_below="@+id/vendorLabel"
+        android:layout_alignStart="@+id/vendorLabel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchDistanceLabel"
+        android:layout_alignStart="@+id/vendor"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        android:id="@+id/searchFrame"
+        >
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchDistance"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar"
+        android:secondaryProgress="0"
+        android:layout_weight="0.15"
+         />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance"
+            android:layout_weight="0.85"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Search Distance"
+        android:id="@+id/searchDistanceLabel"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/vendor"
+        android:layout_alignStart="@+id/searchFrame"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Vendor"
+        android:id="@+id/vendorLabel"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/search"
+        android:layout_alignStart="@+id/search"
+        android:textStyle="bold"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Category"
+        android:id="@+id/categoryLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/search_button"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/searchFrame"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

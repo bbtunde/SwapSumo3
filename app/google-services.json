@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "414641369033",
+    "project_id": "swapsumo"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414641369033:android:da15ec5c3ea41620",
+        "android_client_info": {
+          "package_name": "swampsumo.com.swapsumo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414641369033-bbnlitqce3le3v5o7upoj4tfhoodotj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "swampsumo.com.swapsumo",
+            "certificate_hash": "9f4050caeac320fdbc7787902ffb07ae6c0f1665"
+          }
+        },
+        {
+          "client_id": "414641369033-qt1i6q3ulo6p3fae0d0q4hvfb5vdqj9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbh4iJS44t4mdPzeoy_dg_fWMEpDAzeIA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

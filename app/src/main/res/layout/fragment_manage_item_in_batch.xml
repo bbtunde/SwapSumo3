@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="swampsumo.com.fragments.ManageItemInBatchFragment"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/lightgray"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/add_to_gallery"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_text"
+        android:text="Tap to add an image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5sp"
+        android:hint="Give it a name"
+        android:background="@drawable/notification"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ems="1"
+        android:gravity="left|top"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="@color/black"
+        android:padding="5sp"
+        android:hint="Write something descriptive."
+        android:background="@drawable/notification"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ems="10"
+        android:gravity="left|top"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="16sp"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5sp"
+        android:hint="Amount"
+        android:background="@drawable/notification"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ems="1"
+        android:gravity="left|top"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Item"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/save_item"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

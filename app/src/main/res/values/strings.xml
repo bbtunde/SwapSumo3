@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Swap Sumo</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_detail_title">DetailActivity</string>
+
+    <string name="drawer_switch">SwitchSample</string>
+    <string name="drawer_opensource">Open Source</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category">
+        <item>PC/Consoles</item>
+        <item>Shoes</item>
+        <item>Video Games</item>
+    </string-array>
+
+    <string name="fa_plus">&#xf067;</string>
+    <string name="facebook_app_id">225895244535470</string>
+</resources>

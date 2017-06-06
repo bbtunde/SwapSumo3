@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="swampsumo.com.fragments.MyBatchesFragment">
+
+    <!--
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_items_list"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="false"
+        />
+    -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_batch"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No batch yet. Create one"
+        android:layout_gravity="center"
+        android:id="@+id/nobatch"
+        />
+
+</FrameLayout>
